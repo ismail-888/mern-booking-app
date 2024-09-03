@@ -49,8 +49,9 @@ const DetailsSection = () => {
       <label className="text-gray-700 text-sm font-bold flex-1">
         Description
         <textarea 
+        
           rows={10}
-          className="border rounded w-full py-1 px-2 font-normal"
+          className="border rounded resize-none w-full py-1 px-2 font-normal"
           {...register("description", { required: "This field is required" })}
         ></textarea>
         {errors.description && (
