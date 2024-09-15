@@ -27,9 +27,11 @@ const Detail = () => {
         <h1 className="text-3xl font-bold">{hotel.name}</h1>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-3">
         {hotel.imageUrls.map((image) => (
-          <div className="h-[300px]">
+          <div
+          //  className="h-[300px]"
+          >
             <img
               src={image}
               alt={hotel.name}
